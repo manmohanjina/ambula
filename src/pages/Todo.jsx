@@ -5,10 +5,10 @@ const Todo = () => {
   const [show, setShow] = useState(false);
 
   const [todo, setTodo] = useState([
-    { id: 1, title: "hello", description: "say hello", status: 0 },
-    { id: 2, title: "hello", description: "say hello", status: 0 },
-    { id: 3, title: "hello", description: "say hello", status: 1 },
-    { id: 4, title: "hello", description: "say hello", status: 1 },
+    { id: 1, title: "Example-1", description: "say hello", status: 0 },
+    { id: 2, title: "learn React", description: "say hello", status: 0 },
+    { id: 3, title: "learn machine learing", description: "say hello", status: 1 },
+    { id: 4, title: "learn react native", description: "say hello", status: 1 },
   ]);
   const completedTodo = todo.filter((elm) => elm.status === 1);
   const [total, setTotal] = useState(todo.length);

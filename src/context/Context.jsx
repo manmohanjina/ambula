@@ -11,7 +11,7 @@ export default function AppcontextProvider({ children }) {
   const toggle = () => {
     setIsDark((prev)=>!prev)
   };
-  const value = { loading,setLoading, isDark ,cartCount,setCartCount ,toggle};
+  const value = { loading,setLoading, isDark ,cartCount,setCartCount ,toggle,setError,error};
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
