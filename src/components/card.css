@@ -1,0 +1,48 @@
+.card-container{
+border: 1px solid red;
+padding: 5%;
+background-color:#708090
+;
+
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+  
+}
+.card-div{
+    background: linear-gradient(to bottom, rgba(255, 165, 0, 1), rgba(255, 165, 0, 0));
+    
+padding: 5%;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+.card-div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+
+}
+
+.skeleton {
+    background: linear-gradient(to right, #f76b1c, #faa51a);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 250px;
+    
+
+    animation: skeleton-loading 1s infinite ease-in-out;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
